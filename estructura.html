@@ -90,25 +90,96 @@
     <br>
     <h2 name="informacion">Informacion</h2>
     <br>
-    <ul class="list-inline">
-        <li class="active"><a data-toggle="tab" href="#home">Datos</a></li>
-        <li><a data-toggle="tab" href="#menu1">Contacto</a></li>
-    </ul>
-    <div class="tab-content">
-        <div id="Datos" class="tab-pane fade in active">
-            <h3>HOME</h3>
-            <p>Some content.</p>
-        </div>
-        <div id="Contacto" class="tab-pane fade">
-            <div class="form-group">
-                <label for="usr">Name:</label>
-                <input type="text" class="form-control" id="usr">
+    <!-- TABPILLS -->
+    <div class="row my-3">
+        <!-- Nav pills -->
+        <ul class="nav nav-pills col-sm-6 flex-column">
+          <!--DATOS-->
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#menu1">Datos</a>
+          </li>
+          <!--CONTACTOS-->
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu2">Contacto</a>
+          </li>
+        </ul>
+        <!-- TAB PANES INFO -->
+        <div class="tab-content col-sm-6">
+          <!--CONTENIDO DE "DATOS"-->
+          <div class="tab-pane container active" id="menu1">  
+            <h5>
+            <strong>
+              Si prefieres, podés acercarte personalmente a nuestra sede (Escuela Marta Juana Gonzalez) en Defensa 1100. 
+              <br>  
+              B° Villa el Libertador - de 18 a 20:30hs.
+            </strong>
+            </h5>
+
+            <h5><strong>Documentos a presentar</strong></h5>
+
+            <ul>
+              <li>Copia de DNI.</li>
+              <li>Copia de Título y analítico del secundario o constancia de estudios en trámite.</li>
+              <li>Copia de partida de nacimiento</li>
+              <li>Dos fotos 4x4</li>
+              <li>Folio que contenga la documentación</li>
+              <li>Cuota social cooperadora VOLUNTARIA</li>
+            </ul>
+            <p>
+              <strong>CONSULTÁ POR OTRAS CARRERAS EN LA PÁGINA DEL INSTITUTO</strong>  
+              <br>
+              <a href="http://www.institutotecnicocordoba.com/" target="_blank">http://www.institutotecnicocordoba.com/</a>
+              <br>
+              <strong>TODAS LAS CARRERAS</strong>
+            </p>
+            <h5><strong>Documentacion para inscripcion definitiva</strong></h5>
+            <p>Además de la documentación solicitada se le requerirá para la inscripción definitiva, la ficha médica completa [<a href="https://villaellibertador.itscordoba.edu.ar/images/certificado_unico_de_salud.pdf" target="_blank">Descargar archivo</a>] y el analítico definitivo, si debía materias del secundario.</p>
+
+            <h5><strong>Mayores de 25 sin título de secundario</strong></h5>
+            <p>
+              La Ley de Educación Superior contempla la posibilidad que, quienes se desempeñen laboralmente a una area afin a la carrera en la que se quieren inscribir y hayan termiando la escuela primaria, pueden hacerlo si aprueban un exámen de idoneidad.
+              <br><br>
+              Consultar al momento de la inscripción
+            </p>
+          </div>
+          
+          
+          <!--CONTENIDO DE "CONTACTO"-->
+          <div class="tab-pane container fade" id="menu2">
+            <h5>Contactanos</h5>
+            <form action="/action_page.php">
+              <!-- Nombre y Apellido -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Nombre y Apellido</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" placeholder="Apellido">
               </div>
+              <!-- E-mail -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">E-mail</E-mail></span>
+                </div>
+                <input type="email" class="form-control" placeholder="E-mail">
+              </div>
+              <!-- Numero de contacto -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Numero de telefono</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Numero">
+              </div>
+              <!-- Entrada de comentarios -->
               <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd">
-            </div>
+                <label for="comment">Comentarios:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+              <!--BOTON ENVIAR-->
+              <button style="background-color: #0077bb; border-color: #0077bb;" type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 </html>
