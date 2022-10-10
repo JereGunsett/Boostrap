@@ -71,7 +71,7 @@
     <h2 style="font-size: 1.5rem; font-weight: 200;" class="subtitulo">Sede Villa el Libertador</h2>
     <br>
     <br>
-    <h2 name="carreras" style="font-weight: 300">Carreras</h2>
+    <h2 id="carreras" name="carreras" style="font-weight: 300">Carreras</h2>
     <br>
     <br>
     <!-- Tarjetas -->
@@ -81,7 +81,10 @@
             <div class="card-body text-center">
                 <h4 class="card-title"><strong>Desarrollo de Software</strong></h4>
                 <p class="card-text">Este técnico se ocupa en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior. También en organizaciones dedicadas a otras actividades, pero que producen el software que necesitan para desarrollar sus propias actividades o que integran en productos que venden.</p>
-                <a href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/plan-de-estudios" class="card-link" style="color: #0077bb">Plan de Estudio</a>
+                <!-- Boton Modal -->
+                <button type="button" style="background-color: #0077bb ; border-color: #0077bb" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalDesarrollo">
+                    Plan de Estudio
+                </button>
             </div>
         </div>
         <!-- Tarjeta Enfermeria -->
@@ -89,13 +92,434 @@
             <div class="card-body text-center">
                 <h4 class="card-title"><strong>Enfermeria</strong></h4></a>
                 <p class="card-text">Los conocimientos y habilidades desarrolladas durante su formación le permiten a la/el Enfermera/o el ejercicio profesional en relación de dependencia y en forma libre, desarrollando, brindando y gestionando los cuidados de enfermería autónomos e interdependientes para la promoción, prevención, recuperación y rehabilitación de la persona, la familia, grupo y comunidad hasta el nivel de complejidad de cuidados intermedios, en los ámbitos comunitario y hospitalario en las distintas etapas del ciclo vital; gestionando su ámbito de trabajo y participando en estudios de investigación-acción.</p>
-                <a href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/plan-de-estudios" style="color: #0077bb">Plan de estudios</a>
+                <!-- Boton Modal -->
+                <button type="button" style="background-color: #0077bb ; border-color: #0077bb" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalEnfermeria">
+                    Plan de Estudio
+                </button>
             </div>
         </div>
     </div>
+  
+  <!-- Modal Desarrollo -->
+  <div class="modal fade" id="ModalDesarrollo" data-bs-backdrop="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Plan de Estudio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <table border="1" dir="ltr" style="table-layout: fixed; font-size: 13px; font-family: arial, sans, sans-serif; border-collapse: collapse; border: 1px solid #cccccc;" cellspacing="0" cellpadding="0"><colgroup> <col width="36" /> <col width="32" /> <col width="32" /> <col width="285" /> <col width="60" /> <col width="60" /> <col width="120" /> <col width="120" /> </colgroup>
+        <tbody>
+        <tr style="height: 21px;">
+        <td colspan="3" style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;Referencias&quot;]">Referencias&nbsp;&nbsp;</td>
+        <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot;ESPACIO CURRICULAR&quot;]">Materia</td>
+        <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot; Horas (CATEDRAS SEMANALES)&quot;]">Horas semanales</td>
+        <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot;Horas (CATEDRAS ANUALES)&quot;]">Horas anuales</td>
+        <td style="padding: 0px; font-weight: bold; vertical-align: middle; text-align: center;" data-sheets-value="[null,2,&quot;Correlativas &quot;]" data-sheets-numberformat="[null,1]">Correlativas</td>
+        </tr>
+        <tr style="height: 33px;">
+        <td colspan="7" style="padding: 0px; vertical-align: bottom; text-align: center;">&nbsp;&nbsp;&nbsp;<span style="font-size: 16px; font-weight: bold; line-height: 22.2857151031494px;">PRIMER A&Ntilde;O</span>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;ML&quot;]">ML</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,1]">1</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Matem\u00e1tica y L\u00f3gica&quot;]"><a href="/images/DS-01-Matematica_y_Logica5.pdf" target="_blank">Matem&aacute;tica y L&oacute;gica&nbsp;</a><a href="/images/DS-01-Matematica_y_Logica5.pdf">[2019]</a>&nbsp; <a href="/images/programas/2017/DS-01-Matematica%20y%20Logica.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-01-Matematica%20y%20Logica.pdf" style="line-height: 15.7143px;">[2016]</a><a href="/images/programas/2015-ML.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;[2014]</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,5]">5</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,160]">160</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;SOR&quot;]">SOR</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,2]">2</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Sistemas y Organizaciones&quot;]"><a href="https://docs.google.com/document/d/1uLDRS_Zr3Y6rTP69ZAppVN8lWNk5PmjRLJZFMyAHZi4/edit?usp=sharing" target="_blank">Sistemas y Organizaciones</a> <a href="/images/DS-02-Sistemas_y_Organizaciones.pdf">[2019]</a> <a href="/images/programas/2017/DS-02-Sistemas%20y%20Organizaciones.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-02-Sistemas%20y%20Organizaciones.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-SOR.pdf">[2015]</a> <a href="/images/programas/2014-SOR.pdf" title="programa de Sistemas y Organizaciones">[2014]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;AC&quot;]">A</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Arquitectura de las Computadoras&quot;]"><span style="line-height: 15.7142858505249px;"><a href="https://docs.google.com/document/d/1-UEY06MfyySYqATxcypHuNNWN3_dl9Jr9FFezq0QBrY/edit?usp=sharing" target="_blank"><span style="line-height: 15.7142858505249px;">Arquitectura de la</span>s Computadoras</a> <a href="/images/DS-03-Arquitectura_de_las_Computadoras2.pdf">[2019]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/images/programas/2017/DS-03-Arquitectura%20de%20las%20Computadoras.pdf" style="line-height: 15.7143px;">[2017]</a> <a href="https://docs.google.com/document/d/1-UEY06MfyySYqATxcypHuNNWN3_dl9Jr9FFezq0QBrY/edit?usp=sharing" target="_blank"></a> <a href="/images/programas/2016/DS-03-Arquitectura%20de%20las%20Computadoras.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-A.pdf" style="line-height: 15.7142858505249px;">[2015]</a><br /></span></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;P1&quot;]">P1</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Programaci\u00f3n I&quot;]"><a href="/images/DS-04-Programacion_I2.pdf" target="_blank">Programaci&oacute;n I [2019] </a><a href="/images/programas/2017/DS-04-Programacion%20I.pdf" style="line-height: 15.7143px;">[2017]</a> <a href="https://docs.google.com/document/d/1TuHwuOTR03jqR9_D5bWWepz8shc3xoF2tsOLtI7kics/edit?usp=sharing" target="_blank"></a><a href="/images/programas/2016/DS-04-Programacion%20I.pdf" style="line-height: 15.7143px;">[2016]</a> <a href="https://docs.google.com/document/d/1TuHwuOTR03jqR9_D5bWWepz8shc3xoF2tsOLtI7kics/edit?usp=sharing" target="_blank"></a><a href="/images/programas/2015-P1.pdf" style="line-height: 15.7142858505249px;">[2015]</a> <a href="https://docs.google.com/document/d/1TuHwuOTR03jqR9_D5bWWepz8shc3xoF2tsOLtI7kics/edit?usp=sharing" target="_blank"><br /></a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,6]">6</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,192]">192</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;I&quot;]">I</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,5]">5</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FG&quot;]">FG</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Ingl\u00e9s&quot;]"><a href="https://docs.google.com/document/d/1qASP8d5sXb269KPtLre6Jbds5dYTEPUIgBQutxHUrQ4/edit?usp=sharing" target="_blank">Ingles</a> <a href="/images/DS-05-Ingles.pdf">[2019]</a> <a href="/images/programas/2017/DS-05-Ingles.pdf" style="line-height: 15.7143px;">[2017]</a> <a href="https://docs.google.com/document/d/1qASP8d5sXb269KPtLre6Jbds5dYTEPUIgBQutxHUrQ4/edit?usp=sharing" target="_blank"></a> <a href="/images/programas/2016/DS-05-Ingles.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-I.pdf" style="line-height: 15.7142858505249px;">[2015]</a> <a href="https://docs.google.com/document/d/1qASP8d5sXb269KPtLre6Jbds5dYTEPUIgBQutxHUrQ4/edit?usp=sharing" target="_blank"></a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;LC&quot;]">LC</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,6]">6</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FG&quot;]">FG</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Lengua y Comunicaci\u00f3n&quot;]"><a href="https://docs.google.com/document/d/1nfkpe23J3q38SwNscaddJB-ayBjfePl5RHQ56cwdFZM/edit?usp=sharing" target="_blank">Lengua y Comunicaci&oacute;n</a> <a href="/images/DS-06-Lengua_y_Comunicacion.pdf">[2019]</a> <a href="/images/programas/2017/DS-06-Lengua%20y%20Comunicacion.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-06-Lengua%20y%20Comunicacion.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-LC.pdf" style="line-height: 15.7142858505249px;">[2015]</a> <a href="/images/programas/2014-LC.pdf" title="programa de Lengua y Comunicaci&oacute;n">[2014]</a> <a href="https://docs.google.com/document/d/1nfkpe23J3q38SwNscaddJB-ayBjfePl5RHQ56cwdFZM/edit?usp=sharing" target="_blank"><br /></a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-numberformat="[null,1]">&nbsp;</td>
+        </tr>
+        <tr style="height: 36px;">
+        <td colspan="7" style="padding: 0px; vertical-align: bottom; text-align: center;"><span style="font-size: 16px; font-weight: bold; line-height: 22.2857151031494px;">SEGUNDO A&Ntilde;O</span>&nbsp;</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;SO&quot;]">SO</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,7]">7</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Sistemas Operativos&quot;]"><a href="https://docs.google.com/document/d/1ZMDyJdAh6liUJFBACGMtWcUalaW03JieyTEUj5FJMW4/edit?usp=sharing" target="_blank">Sistemas Operativos</a> <a href="/images/DS-07-Sistemas_Operativos.pdf">[2019]</a> <a href="/images/programas/2017/DS-07-Sistemas%20Operativos.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-07-Sistemas%20Operativos.pdf" style="line-height: 15.7143px;">[2016]</a><a href="/images/programas/2015-SO.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;<a href="/images/programas/2014-SO.pdf">[2014]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;3&quot;]" data-sheets-numberformat="[null,1]">3</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;MA&quot;]">MA</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,8]">8</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Matem\u00e1tica Aplicada&quot;]"><a href="https://docs.google.com/document/d/1dMIy5LJyKmVdHiu3aAVP-QMtPPV5vN-ZS2ROEc0Nuto/edit?usp=sharing" target="_blank">Matem&aacute;tica Aplicada</a> <a href="/images/DS-08-Matematica_Aplicada.pdf">[2019]</a>&nbsp; <a href="/images/programas/2017/DS-08-Matematica%20Aplicada.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-08-Matematica%20Aplicada.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-MA.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;<a href="/images/programas/2014-MA.pdf">[2014]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;1&quot;]" data-sheets-numberformat="[null,1]">1</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;MS&quot;]">MS</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,9]">9</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Modelado de Sistemas&quot;]">
+        <p><a href="https://docs.google.com/document/d/1vGVQrDPxvAv29k_NN47c1Vs3S04PYH-s-2RYvCnOzyo/edit?usp=sharing" target="_blank">Modelado de Sistemas</a> <a href="/images/DS-09-Modelado_de_Sistemas.pdf">[2019]</a> <a href="/images/programas/2017/DS-09-Modelado%20de%20Sistemas.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-09-Modelado%20de%20Sistemas.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-MS.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;<a href="/images/programas/2014-MS.pdf">[2014]</a></p>
+        </td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,5]">5</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,160]">160</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;2-6 &quot;]" data-sheets-numberformat="[null,1]">2-6</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;P2&quot;]">P2</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,10]">10</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Programaci\u00f3n II&quot;]"><a href="https://docs.google.com/document/d/1lVoCbU7QUb5vENG6KKYe21JaUW96Cry-o3DRE1ruX_k/edit?usp=sharing" target="_blank">Programaci&oacute;n II</a> <a href="/images/programas/2017/DS-10-Programacion%20II.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-10-Programacion%20II.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-P2.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;<a href="/images/programas/2014-P2.pdf">[2014]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,6]">6</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,192]">192</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;4&quot;]" data-sheets-numberformat="[null,1]">4</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;BD&quot;]">BD</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,11]">11</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Bases de Datos&quot;]"><a href="https://docs.google.com/document/d/1UnFDSHZGx6yhjRHZIUjXb5H_6PcopresjHk_9QZS7lQ/edit?usp=sharing" target="_blank">Bases de Datos</a> <a href="/images/DS-11-Bases_de_Datos.pdf">[2019]</a> <a href="/images/programas/2017/DS-11-Bases%20de%20Datos.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-11-Bases%20de%20Datos.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp; <a href="/images/programas/2015-BD.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;<a href="/images/programas/2014-BD.pdf">[2014]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;4&quot;]" data-sheets-numberformat="[null,1]">4</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;PP1&quot;]">PP1</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,12]">12</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;PP&quot;]">PP</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Pr\u00e1ctica Profesionalizante I&quot;]"><a href="https://docs.google.com/document/d/1p9m9gJj2-fkS14sUOSQB1zwqJgeQYcCtC2ryn08q0So/edit?usp=sharing" target="_blank">Pr&aacute;ctica Profesionalizante I</a> <a href="/images/DS-Practicas_Profesionalizantes.pdf">[2019]</a> <a href="/images/programas/2017/DS-Practicas%20Profesionalizantes.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-Practicas%20Profesionalizantes.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp; <a href="/images/programas/2015-PP.pdf" style="line-height: 15.7142858505249px;">[2015]</a>&nbsp;<a href="/images/programas/2014-Practicas.pdf">[2014]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,9]">9</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,288]">288</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;2-4-5&quot;,null,null,null,1]" data-sheets-numberformat="[null,1]">2-4-5</td>
+        </tr>
+        <tr style="height: 36px;">
+        <td colspan="7" style="padding: 0px; vertical-align: bottom; text-align: center;">&nbsp;&nbsp;&nbsp;<span style="font-size: 16px; font-weight: bold; line-height: 22.2857151031494px;">TERCER A&Ntilde;O</span></td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;IU&quot;]">IU</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,13]">13</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Interfaz del Usuario&quot;]"><a href="https://docs.google.com/document/d/1t48CRwUGfoZgKLzLwPC5-sXcWRIOn71eHSKIbih2hyk/edit?usp=sharing" target="_blank">Interfaz del Usuario</a>&nbsp; <a href="/images/DS-13_Interfaz_del_Usuario.pdf">[2019]</a> <a href="/images/programas/2017/DS-13-Interfaz%20del%20Usuario.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-13-Interfaz%20del%20Usuario.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp; <a href="/images/programas/2015-IU.pdf" style="line-height: 15.7142858505249px;">[2015]</a> <a href="https://docs.google.com/document/d/1t48CRwUGfoZgKLzLwPC5-sXcWRIOn71eHSKIbih2hyk/edit?usp=sharing" target="_blank"></a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;9&quot;]" data-sheets-numberformat="[null,1]">9</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;R&quot;]">R</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,14]">14</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Redes&quot;]"><a href="https://docs.google.com/document/d/184SG1VtWf3CXt7QPsfxvt8cpxtt2gqEd30K1WWxRuck/edit?usp=sharing" target="_blank">Redes</a> <a href="/images/DS-14-Redes.pdf">[2019]</a> <a href="/images/programas/2017/DS-14-Redes.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp;<a href="/images/programas/2016/DS-14-Redes.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-R.pdf" style="line-height: 15.7142858505249px;">[2015]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;7&quot;]" data-sheets-numberformat="[null,1]">7</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;IS&quot;]">IS</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,15]">15</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Ingenier\u00eda de Software&quot;]"><a href="https://docs.google.com/document/d/1GTNmq8BozCWmGSQcZsPxFqLNuI0LSTACYKSKeTvtshU/edit?usp=sharing" target="_blank">Ingenier&iacute;a de Software</a> <a href="/images/DS-15-Ingenieria_de_Software.pdf">[2019]</a> <a href="/images/programas/2017/DS-15-Ingenieria%20de%20Software.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-15-Ingenieria%20de%20Software.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp; <a href="/images/programas/2015-IS.pdf" style="line-height: 15.7142858505249px;">[2015]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,5]">5</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,160]">160</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;9&quot;]" data-sheets-numberformat="[null,1]">9</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;P3&quot;]">P3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,16]">16</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Programaci\u00f3n III&quot;]"><a href="https://docs.google.com/document/d/1v5_iD5SHC1cKCK3Mt2_MuKXsYfQaKPnIGU2eobMdL9g/edit?usp=sharing" target="_blank">Programaci&oacute;n III</a> <a href="/images/programas/2017/DS-16-Programacion%20III.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp; <a href="/images/programas/2016/DS-16-Programacion%20III.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp; <a href="/images/programas/2015-P3.pdf" style="line-height: 15.7142858505249px;">[2015]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,6]">6</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,192]">192</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;10-11&quot;]" data-sheets-numberformat="[null,1]">10-11</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;VV&quot;]">VV</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,17]">17</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Validaci\u00f3n y Verificaci\u00f3n de Programas&quot;]"><a href="https://docs.google.com/document/d/1eb6PTFMlp6qTtlyTSzlFTdZtt9TgXX1TWydYLu-SFpo/edit?usp=sharing" target="_blank">Validaci&oacute;n y Verificaci&oacute;n de Programas</a> <a href="/images/DS-17-Validacion_y_Verificacion_de_programas.pdf">[2019]</a> <a href="/images/programas/2017/DS-17-Validacion%20y%20Verificacion%20de%20programas.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp;<a href="/images/programas/2016/DS-17-Validacion%20y%20Verificacion%20de%20programas.pdf" style="line-height: 15.7143px;">[2016]</a><a href="/images/programas/2015-VV.pdf" style="line-height: 15.7142858505249px;">[2015]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;8-10&quot;]" data-sheets-numberformat="[null,1]">8-10</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;E&quot;]">E</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,18]">18</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FG&quot;]">FG</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;\u00c9tica y Deontolog\u00eda Profesional&quot;]"><a href="https://docs.google.com/document/d/1E5IcCBSFRM-Yyx5y_x7ZbYQXgRttr9P6roSbaUKV4N0/edit?usp=sharing" target="_blank">&Eacute;tica y Deontolog&iacute;a Profesional</a> <a href="/images/DS-18-Etica_y_Deontologia_Profesional.pdf">[2019]</a> &nbsp; &nbsp; &nbsp;&nbsp; <a href="/images/programas/2017/DS-18-Etica%20y%20Deontologia%20Profesional.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp;<a href="/images/programas/2016/DS-18-Etica%20y%20Deontologia%20Profesional.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-E.pdf" style="line-height: 15.7142858505249px;">[2015]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;6&quot;]" data-sheets-numberformat="[null,1]">6</td>
+        </tr>
+        <tr style="height: 21px;">
+        <td style="padding: 0px; vertical-align: bottom; font-weight: bold;" data-sheets-value="[null,2,&quot;PP2&quot;]">PP2</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,19]">19</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;PP&quot;]">PP</td>
+        <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Pr\u00e1ctica Profesionalizante II&quot;]"><a href="https://docs.google.com/document/d/1p9m9gJj2-fkS14sUOSQB1zwqJgeQYcCtC2ryn08q0So/edit?usp=sharing" target="_blank">Pr&aacute;ctica Profesionalizante II</a> <a href="/images/DS-Practicas_Profesionalizantes.pdf">[2019]</a>&nbsp;&nbsp;&nbsp; <a href="/images/programas/2017/DS-Practicas%20Profesionalizantes.pdf" style="line-height: 15.7143px;">[2017]</a>&nbsp;&nbsp;<a href="/images/programas/2016/DS-Practicas%20Profesionalizantes.pdf" style="line-height: 15.7143px;">[2016]</a>&nbsp;<a href="/images/programas/2015-PP.pdf" style="line-height: 15.7142858505249px;">[2015]</a></td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,9]">9</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,288]">288</td>
+        <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;12&quot;]" data-sheets-numberformat="[null,1]">12</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Enfermeria -->
+<div class="modal fade" id="ModalEnfermeria" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Plan de Estudio</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table border="1" dir="ltr" style="table-layout: fixed; font-size: 13px; font-family: arial, sans, sans-serif; border-collapse: collapse; border: 1px solid #cccccc;" cellspacing="0" cellpadding="0"><colgroup><col width="32" /><col width="27" /><col width="282" /><col width="72" /><col width="91" /><col width="76" /><col width="102" /></colgroup>
+                <tbody>
+                <tr style="height: 34px;">
+                <td colspan="7" rowspan="1" style="padding: 0px; vertical-align: bottom; font-size: 140%; font-weight: bold; text-align: center;" data-sheets-value="[null,2,&quot;PLAN DE ESTUDIOS ENFERMER\u00cdA&quot;]">PLAN DE ESTUDIOS ENFERMER&Iacute;A</td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                    <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                    <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot;ESPACIO CURRICULAR&quot;]">Materia</td>
+                    <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot;Horas (RELOJ ANUALES)&quot;]">Reloj anuales</td>
+                    <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot; Horas (CATEDRAS SEMANALES)&quot;]">Horas Semanales</td>
+                    <td style="padding: 0px; font-weight: bold; vertical-align: middle;" data-sheets-value="[null,2,&quot;Horas (CATEDRAS ANUALES)&quot;]">Horas Anuales</td>
+                    <td style="padding: 0px; font-weight: bold; vertical-align: middle; text-align: center;" data-sheets-value="[null,2,&quot;Correlativas &quot;]" data-sheets-numberformat="[null,1]">Correlativas</td>
+                </tr>
+                <tr style="height: 33px;">
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom; font-size: 120%; font-weight: bold;" data-sheets-value="[null,2,&quot;PRIMER A\u00d1O&quot;]">PRIMER A&Ntilde;O</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-numberformat="[null,1]">&nbsp;</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,1]">1</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Salud P\u00fablica y Epidemiolog\u00eda&quot;]">Salud P&uacute;blica y Epidemiolog&iacute;a</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,2]">2</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FG&quot;]">FG</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Tecnolog\u00eda de la Informaci\u00f3n y la Comunicaci\u00f3n&quot;]">Tecnolog&iacute;a de la Informaci&oacute;n y la Comunicaci&oacute;n</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,85]">85</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Morfofisiolog\u00eda Humana&quot;]">Morfofisiolog&iacute;a Humana</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,85]">85</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,4]">4</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FG&quot;]">FG</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Ingl\u00e9s T\u00e9cnico I&quot;]">Ingl&eacute;s T&eacute;cnico I</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,5]">5</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Enfermer\u00eda en la Comunidad&quot;]">Enfermer&iacute;a en la Comunidad</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,171]">171</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,8]">8</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,256]">256</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,6]">6</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;PP&quot;]">PP</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Pr\u00e1ctica Profesionalizante I&quot;]">Pr&aacute;ctica Profesionalizante I</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,277]">277</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,13]">13</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,416]">416</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;- &quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 36px;">
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom; font-size: 120%; font-weight: bold;" data-sheets-value="[null,2,&quot;SEGUNDO A\u00d1O&quot;]">SEGUNDO A&Ntilde;O</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-numberformat="[null,1]">&nbsp;</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,7]">7</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FG&quot;]">FG</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Ingl\u00e9s T\u00e9cnico II&quot;]">Ingl&eacute;s T&eacute;cnico II</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;4&quot;]" data-sheets-numberformat="[null,1]">4</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,8]">8</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Nutrici\u00f3n Humana&quot;]">Nutrici&oacute;n Humana</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;3&quot;]" data-sheets-numberformat="[null,1]">3</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,9]">9</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Antropolog\u00eda Social y Cultural&quot;]">Antropolog&iacute;a Social y Cultural</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;-&quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,10]">10</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Enfermer\u00eda Materno-Infantil y del Adolecente&quot;]">Enfermer&iacute;a Materno-Infantil y del Adolecente</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,171]">171</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,8]">8</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,256]">256</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;5&quot;]" data-sheets-numberformat="[null,1]">5</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,11]">11</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;PP&quot;]">PP</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Pr\u00e1ctica Profesionalizante II&quot;]">Pr&aacute;ctica Profesionalizante II</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,277]">277</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,13]">13</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,416]">416</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;1 a 6&quot;]" data-sheets-numberformat="[null,1]">1 a 6</td>
+                </tr>
+                <tr style="height: 36px;">
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom; font-size: 120%; font-weight: bold;" data-sheets-value="[null,2,&quot;TERCER A\u00d1O&quot;]">TERCER A&Ntilde;O</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;">&nbsp;</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-numberformat="[null,1]">&nbsp;</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,12]">12</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Investigaci\u00f3n y Bioestad\u00edstica en Enfermer\u00eda&quot;]">Investigaci&oacute;n y Bioestad&iacute;stica en Enfermer&iacute;a</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;1-2&quot;]" data-sheets-numberformat="[null,1]">1-2</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,13]">13</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FF&quot;]">FF</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Organizaci\u00f3n y Gesti\u00f3n en Salud&quot;]">Organizaci&oacute;n y Gesti&oacute;n en Salud</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,64]">64</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,3]">3</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,96]">96</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;-&quot;]" data-sheets-numberformat="[null,1]">-</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,14]">14</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Enfermer\u00eda del Adulto y el Anciano&quot;]">Enfermer&iacute;a del Adulto y el Anciano</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,171]">171</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,8]">8</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,256]">256</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;10&quot;]" data-sheets-numberformat="[null,1]">10</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,15]">15</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;FE&quot;]">FE</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Enfermer\u00eda en Salud Mental&quot;]">Enfermer&iacute;a en Salud Mental</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,128]">128</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,6]">6</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,192]">192</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;10&quot;]" data-sheets-numberformat="[null,1]">10</td>
+                </tr>
+                <tr style="height: 21px;">
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,16]">16</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;PP&quot;]">PP</td>
+                <td style="padding: 0px; vertical-align: bottom;" data-sheets-value="[null,2,&quot;Pr\u00e1ctica Profesionalizante II&quot;]">Pr&aacute;ctica Profesionalizante II</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,299]">299</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,14]">14</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: right;" data-sheets-value="[null,3,null,448]">448</td>
+                <td style="padding: 0px; vertical-align: bottom; text-align: center;" data-sheets-value="[null,2,&quot;7-11&quot;]" data-sheets-numberformat="[null,1]">7-11</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     <br>
     <h2 name="informacion" style="font-weight: 300">Informacion</h2>
     <br>
+
+
     <!-- TABPILLS -->
     <div class="row my-3">
         <!-- Nav pills -->
