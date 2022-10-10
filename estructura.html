@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm" style="background-color: #0077bb">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
             <img src="img/logo-azul.jpg" alt="Logo" style="width:40px;">
@@ -20,75 +22,79 @@
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#carreras">Desarrollo de Software</a>
+                <a class="nav-link" style="color: #bbe6ff" href="#carreras">Desarrollo de Software</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#carreras">Enfermeria</a>
+                <a class="nav-link" style="color: #bbe6ff" href="#carreras">Enfermeria</a>
             </li>
         </ul>
     </nav>
     <br>
     <!-- Contenedor -->
-    <div class="container">
+    <div class="container-fluid">
+    
         <!-- Carrusel -->
-        <div id="demo" class="carousel-slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                <li data-target="#demo" data-slide-to="3"></li>
-            </ul>
-            <!-- Imagenes de Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <!-- Imagenes -->
             <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/c1.jpg" alt="1">
-            </div>
-            <div class="carousel-item">
-                <img src="img/c2.jpg" alt="2">
-            </div>
-            <div class="carousel-item">
-                <img src="img/c3.jpg" alt="3">
-            </div>
-            <div class="carousel-item">
-                <img src="img/c4.jpg" alt="4">
-            </div>
+              <div class="carousel-item active">
+                <img src="img/c1.jpg" class="d-block w-100" alt="1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/c2.jpg" class="d-block w-100" alt="2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/c3.jpg" class="d-block w-100" alt="3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/c4.jpg" class="d-block w-100" alt="4">
+              </div>
             </div>
             <!-- Controles -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
     </div>
-    <h1>Instituto Tecnico Superior Cordoba</h1>
-    <h2 class="subtitulo">Sede Villa el Libertador</h2>
+    <h1 style="font-weight: 400 ;">Instituto Tecnico Superior Cordoba</h1>
+    <h2 style="font-size: 1.5rem; font-weight: 200;" class="subtitulo">Sede Villa el Libertador</h2>
     <br>
     <br>
-    <h2 name="carreras">Carreras</h2>
+    <h2 name="carreras" style="font-weight: 300">Carreras</h2>
     <br>
     <br>
     <!-- Tarjetas -->
     <div class="card-deck">
+        <!-- Tarjeta Desarrollo de Software -->
         <div class="card">
             <div class="card-body text-center">
-                <h4 class="card-title">Desarrollo de Software</h4>
+                <h4 class="card-title"><strong>Desarrollo de Software</strong></h4>
                 <p class="card-text">Este técnico se ocupa en organizaciones de diversos tipos; empresas que realizan desarrollo de software por encargo de organizaciones locales o extranjeras, que proveen software junto con otros servicios de asesoramiento y consultoría, y, en menor número, que desarrollan sus propios productos de software para vender en el país o en el exterior. También en organizaciones dedicadas a otras actividades, pero que producen el software que necesitan para desarrollar sus propias actividades o que integran en productos que venden.</p>
-                <a href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/plan-de-estudios" class="card-link">Plan de Estudio</a>
+                <a href="https://villaellibertador.itscordoba.edu.ar/index.php/desarrollo-de-software/plan-de-estudios" class="card-link" style="color: #0077bb">Plan de Estudio</a>
             </div>
         </div>
+        <!-- Tarjeta Enfermeria -->
         <div class="card">
             <div class="card-body text-center">
-                <h4 class="card-title">Enfermeria</h4></a>
+                <h4 class="card-title"><strong>Enfermeria</strong></h4></a>
                 <p class="card-text">Los conocimientos y habilidades desarrolladas durante su formación le permiten a la/el Enfermera/o el ejercicio profesional en relación de dependencia y en forma libre, desarrollando, brindando y gestionando los cuidados de enfermería autónomos e interdependientes para la promoción, prevención, recuperación y rehabilitación de la persona, la familia, grupo y comunidad hasta el nivel de complejidad de cuidados intermedios, en los ámbitos comunitario y hospitalario en las distintas etapas del ciclo vital; gestionando su ámbito de trabajo y participando en estudios de investigación-acción.</p>
-                <a href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/plan-de-estudios">Plan de estudios</a>
+                <a href="https://villaellibertador.itscordoba.edu.ar/index.php/enfermeria/plan-de-estudios" style="color: #0077bb">Plan de estudios</a>
             </div>
         </div>
     </div>
     <br>
-    <h2 name="informacion">Informacion</h2>
+    <h2 name="informacion" style="font-weight: 300">Informacion</h2>
     <br>
     <!-- TABPILLS -->
     <div class="row my-3">
@@ -128,12 +134,12 @@
             <p>
               <strong>CONSULTÁ POR OTRAS CARRERAS EN LA PÁGINA DEL INSTITUTO</strong>  
               <br>
-              <a href="http://www.institutotecnicocordoba.com/" target="_blank">http://www.institutotecnicocordoba.com/</a>
+              <a style="color: #0077bb" href="http://www.institutotecnicocordoba.com/" target="_blank">http://www.institutotecnicocordoba.com/</a>
               <br>
               <strong>TODAS LAS CARRERAS</strong>
             </p>
             <h5><strong>Documentacion para inscripcion definitiva</strong></h5>
-            <p>Además de la documentación solicitada se le requerirá para la inscripción definitiva, la ficha médica completa [<a href="https://villaellibertador.itscordoba.edu.ar/images/certificado_unico_de_salud.pdf" target="_blank">Descargar archivo</a>] y el analítico definitivo, si debía materias del secundario.</p>
+            <p>Además de la documentación solicitada se le requerirá para la inscripción definitiva, la ficha médica completa [<a style="color: #0077bb" href="https://villaellibertador.itscordoba.edu.ar/images/certificado_unico_de_salud.pdf" target="_blank">Descargar archivo</a>] y el analítico definitivo, si debía materias del secundario.</p>
 
             <h5><strong>Mayores de 25 sin título de secundario</strong></h5>
             <p>

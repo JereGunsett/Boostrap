@@ -11,15 +11,6 @@ h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
-div.carousel-item {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.navbar {
-    background-color: #0077bb;
-}
 .nav-link {
     color: #bbe6ff;
 }
@@ -31,4 +22,10 @@ h2 {
 }
 button {
     color: #0077bb;
+}
+.nav-link {
+    background: none;
+}
+.nav-link.active {
+    background-color: #0077bb !important;
 }
