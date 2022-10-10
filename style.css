@@ -30,3 +30,6 @@ button {
 .nav-link.active {
     background-color: #0077bb !important;
 }
+body {
+    min-height: 100%
+}
